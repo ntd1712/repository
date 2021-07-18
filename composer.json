@@ -1,0 +1,36 @@
+{
+  "name": "chaos/repository",
+  "description": "Pre-built repository base classes, more frameworks to come soon",
+  "keywords": [
+    "vietnam",
+    "repository"
+  ],
+  "homepage": "https://github.com/ntd1712",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "ntd1712",
+      "email": "ntd1712@mail.com"
+    }
+  ],
+  "require": {
+    "chaos/doctrine": "*",
+    "chaos/entity": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Chaos\\Repository\\": "src/"
+    },
+    "files": [
+      "autoload/defines.php",
+      "autoload/functions.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
